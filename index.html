@@ -488,6 +488,9 @@
 
     <script src="form.js"></script>
     <script>
+        // Backend API URL
+        const API_URL = 'https://lolittastudio-website-backend.onrender.com';
+
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -579,7 +582,7 @@
             };
 
             try {
-                const response = await fetch('/api/submissions', {
+                const response = await fetch(`${API_URL}/api/submissions`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

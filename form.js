@@ -1,3 +1,6 @@
+// Backend API URL
+const API_URL = 'https://lolittastudio-website-backend.onrender.com';
+
 // Form questionnaire functionality
 let currentStep = 0;
 let formData = {
@@ -323,7 +326,7 @@ async function submitForm() {
 
     try {
         // Send to backend API
-        const response = await fetch('/api/submissions', {
+        const response = await fetch(`${API_URL}/api/submissions`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
