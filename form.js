@@ -335,6 +335,10 @@ async function submitForm() {
         });
 
         if (response.ok) {
+            // Отправка цели в Яндекс.Метрику
+            if (typeof ym !== 'undefined') {
+                ym(104983627, 'reachGoal', 'form_submission');
+            }
             showSuccessMessage();
         } else {
             throw new Error('Submission failed');
