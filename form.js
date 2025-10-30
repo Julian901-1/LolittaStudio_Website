@@ -18,19 +18,19 @@ const questions = [
                 value: 'low',
                 label: 'Низкая сложность',
                 description: 'Выполнение работы контуром без заливок. С минимальным количеством цветов.',
-                image: 'images/22.jpg'
+                image: 'images/22.webp'
             },
             {
                 value: 'medium',
                 label: 'Средняя сложность',
                 description: 'Изображение с заливкой. Читается преимущественно с одной стороны.',
-                image: 'images/4.jpg'
+                image: 'images/4.webp'
             },
             {
                 value: 'high',
                 label: 'Высокая сложность',
                 description: 'Изображение с заливкой. Читается с обеих сторон.',
-                image: 'images/9.jpg'
+                image: 'images/9.webp'
             }
         ]
     },
